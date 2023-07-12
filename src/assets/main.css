@@ -1,0 +1,183 @@
+@import './base.css';
+
+/* Custom Not Library */
+
+.icon.active svg line {
+  stroke: rgb(255, 255, 255);
+}
+
+
+.no-select {
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.no-drag {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+  -o-display: flex;
+  -moz-display: flex;
+  -webkit-display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-y-center {
+  align-items: center;
+}
+
+.flex-x-between {
+  justify-content: space-between;
+}
+
+.flex-y-down {
+  flex-direction: column;
+}
+
+.T-gray {
+  color: var(--gray);
+}
+
+.T-disable {
+  color: var(--text-gray);
+}
+
+.FW-400 {
+  font-weight: 400;
+}
+
+/* Cursor */
+.cursor-point {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .cursor-point {
+    cursor: default;
+  }
+}
+
+.cursor-def {
+  cursor: default;
+}
+
+.no-cursor {
+  pointer-events: none;
+}
+
+/* Image */
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.image-w {
+  width: 100%;
+}
+
+.profile {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Background */
+.BG-blue {
+  background: var(--blue);
+}
+
+/* Svg */
+.stroke-white svg path {
+  stroke: #fff;
+}
+
+.stroke-line-white svg line {
+  stroke: #fff;
+}
+
+/* Icons */
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+
+/* Margin */
+.ML-10px {
+  margin-left: 10px;
+}
+
+.ML-40px {
+  margin-left: 40px;
+}
+
+.MT-10px {
+  margin-top: 50px;
+}
+
+
+.MT-50px {
+  margin-top: 50px;
+}
+
+.MT-64px {
+  margin-top: 64px;
+}
+
+/* Overflow */
+.scroll-x-auto {
+  overflow-x: auto;
+}
+
+/* List */
+.list {
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+
+.list:hover {
+  color: var(--blue);
+}

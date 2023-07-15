@@ -4,9 +4,9 @@ const students = useStudents();
 </script>
 
 <template>
-    <section>
-        <h2>Welcome, Nadia!</h2>
-        <span>My Status <span class="T-blue">View All</span></span>
+    <section class="container">
+        <h3>Welcome, Nadia!</h3>
+        <div>My Status <span class="T-blue">View All</span></div>
     </section>
 
     <div class="students flex">
@@ -23,6 +23,18 @@ const students = useStudents();
 </template>
 <style scoped>
 
+.container {
+    margin-left: 20px;
+}
+
+.container h3 {
+    margin-bottom: 30px;
+}
+
+.container div {
+    margin-bottom: 10px;
+}
+
 .students {
     flex-wrap: wrap;
 }
@@ -32,7 +44,7 @@ const students = useStudents();
     margin: 10px;
     max-width: 350px;
     padding: 25px 15px;
-    border-radius: 12px;
+    border-radius: 20px;
     background: #ffffff;
     align-items: flex-start;
 }

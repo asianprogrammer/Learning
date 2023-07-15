@@ -10,7 +10,7 @@ const teachers = store.classes;
 const finders = store.finders;
 </script>
 <template>
-  <section class="flex flex-x-even">
+  <section class="container flex">
     <!-- Classes -->
     <div class="classes-container w-50p PM">
       <div class="flex flex-x-between MY-10px">
@@ -134,6 +134,7 @@ const finders = store.finders;
   </section>
 </template>
 <style scoped>
+
 .w-50p {
   width: 45%;
 }
@@ -141,12 +142,21 @@ const finders = store.finders;
   margin: 0 10px;
   padding: 0 10px;
 }
+
+.classes-container,
+.finder {
+  padding: 10px 16px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
 .main-class {
   width: 95%;
   padding: 10px;
   overflow: hidden;
   margin: 30px auto;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 .main-class:hover {
   background: #f0f6ff;
@@ -186,6 +196,8 @@ const finders = store.finders;
 .smallProfile {
   width: 30px;
   height: 30px;
+  min-width: 30px;
+  min-height: 30px;
 }
 .cover {
   width: 100%;

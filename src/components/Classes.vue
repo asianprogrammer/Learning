@@ -157,11 +157,17 @@ const finders = store.finders;
 }
 .btn {
   opacity: 0;
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
   transform: translateY(20px);
+  -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .main-class:hover .btn {
   opacity: 1;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
   transform: translateY(0px);
 }
 .icon-ES {
